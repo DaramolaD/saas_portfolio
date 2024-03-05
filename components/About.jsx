@@ -22,10 +22,10 @@ const About = () => {
         </div>
         <div className=" pt-5">
           <p className="aboutPara text-base leading-normal lg:leading-normal lg:text-2xl text-white71">
-            Hey there! I&apos;m Daniel, and I'm here to <span>turbocharge</span>{" "}
-            your startup&apos;s digital journey. With <span>Next.js</span>{" "}
+            Hey there! I&apos;m Daniel, and I&apos;m here to <span>turbocharge</span>
+            your startup&apos;s digital journey. With <span>Next.js</span>
             expertise and a knack for intuitive <span>UI/UX design</span>, I
-            solve your startup&apos;s tech headaches so you can focus on{" "}
+            solve your startup&apos;s tech headaches so you can focus on
             <span>growth</span>.
           </p>
           <p className="aboutPara text-base leading-normal lg:leading-normal lg:text-2xl text-white71">

@@ -7,7 +7,7 @@ const ProjectCard = ({ client, img, tools, description }) => {
       className="relative z-10 rounded-sm overlayDetailCont hover:shadow-md hover:shadow-primary-normalHover"
       style={{ backgroundImage: "/../assets/projectsimg/Femi.png" }}
     >
-      <img src={img} alt="" className="w-full rounded-xl h-auto" />
+      <Image src={img} alt="" className="w-full rounded-xl h-auto" />
       <div className="overlayDetail hidden absolute items-start justify-center w-full bottom-0 left-0">
         <div className="w-full flex p-5 bg-bg2-100 justify-between items-start">
           <h4 className="sm:text-base lg:text-lg text-white">{client}</h4>
