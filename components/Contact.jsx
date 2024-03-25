@@ -1,10 +1,11 @@
 import React from "react";
 import SectionHeader from "./SectionHeader";
 import { Button } from "./ui/button";
+import ContainerStroke from "./ContainerStroke";
 
 const Contact = () => {
   return (
-    <div className="bg-bg1-normal w-full h-fit flex justify-center py-28">
+    <div className="bg-bg1-normal w-full h-fit flex justify-center py-28" id="contact">
       <div className="relative max-w-screen-2xl gap-12 w-full flex items-start flex-col px-5">
         <SectionHeader>Contact</SectionHeader>
         <div className="grid md:pl-10 gap-10 max-w-[700px] w-full">
@@ -20,7 +21,7 @@ const Contact = () => {
                 id="name"
                 type="text"
                 placeholder="Name"
-                className="p-4 rounded-md"
+                className="p-4 rounded-md bg-bg2-400 text-white placeholder-white"
               />
             </div>
             <div className="flex flex-1 flex-col w-full max-w-sm item-start gap-5">
@@ -34,7 +35,7 @@ const Contact = () => {
                 id="email"
                 type="email"
                 placeholder="Email"
-                className="p-4 rounded-md"
+                className="p-4 rounded-md bg-bg2-400 text-white placeholder-white"
               />
             </div>
           </div>
@@ -49,11 +50,12 @@ const Contact = () => {
               id="message"
               type="textarea"
               placeholder="Message"
-              className="p-4 rounded-md min-h-40 h-full"
+              className="p-4 rounded-md min-h-40 h-full bg-bg2-400 text-white placeholder-white"
             />
           </div>
           <Button variant="default" size="lg" className="w-fit max-w-[150px]">Submit</Button>
         </div>
+        <ContainerStroke>C</ContainerStroke>
       </div>
     </div>
   );

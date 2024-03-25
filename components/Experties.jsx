@@ -1,17 +1,20 @@
 import React from "react";
+import VerticalScrolling from "./VerticalScrolling";
 
 const Experties = () => {
   return (
-    <div className="bg-bg2-100 p-4 w-full flex justify-center py-5 overflow-hidden">
+    <div className="bg-bg2-100 p-4 w-full flex justify-center py-5 overflow-hidden" id="expertise">
       <div className="flex gap-5 max-w-screen-2xl w-full justify-between items-center overflow-hidden">
-        {expertise.map(({ id, title }) => (
-          <p
-            key={id}
-            className="text-white text-lg 2xl:text-xl 2xl:leading-normal whitespace-nowrap p-3 px-5 rounded-full border-primary-lightActive border-2 opacity-50"
-          >
-            {title}
-          </p>
-        ))}
+        <VerticalScrolling>
+          {expertise.map(({ id, title }) => (
+            <p
+              key={id}
+              className="text-white text-lg 2xl:text-xl 2xl:leading-normal whitespace-nowrap p-3 px-5 rounded-full border-primary-lightActive border-2 opacity-50"
+            >
+              {title}
+            </p>
+          ))}
+        </VerticalScrolling>
       </div>
     </div>
   );

@@ -11,7 +11,7 @@ const Services = () => {
       <div className="relative max-w-screen-2xl gap-12 w-full flex items-start flex-col px-5">
         <SectionHeader>Custom Startup Solutions</SectionHeader>
         <AccordionContainer />
-        <div className="flex gap-5">
+        <div className="flex gap-7 flex-wrap gap-y-6">
           <Button variant="default" size="lg" className="md:ml-10">
             <span className="text-lg">Schedule A Call</span>
             <CalendarIcon className="ml5" />

@@ -3,7 +3,7 @@ import React from 'react'
 
 const SectionHeader = ({children}) => {
   return (
-    <h3 className={`${kaushanScript.className} text-6xl text-white`}>
+    <h3 className={`${kaushanScript.className} text-4xl leading-normal sm:text-6xl text-white`}>
       {children}
     </h3>
   )

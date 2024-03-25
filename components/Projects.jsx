@@ -6,7 +6,7 @@ import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   return (
-    <div className="bg-bg1-normal w-full h-fit flex justify-center py-28">
+    <div className="bg-bg1-normal w-full h-fit flex justify-center py-28" id="projects">
       <div className="relative max-w-screen-2xl gap-12 w-full flex items-start flex-col px-5">
         <SectionHeader>Project</SectionHeader>
         <div className="pt-8 flex flex-wrap justify-center items-center gap-5">
@@ -45,20 +45,20 @@ const projectData = [
     img: "/../assets/projectsimg/TraquilHaven.png",
     tools: "UIUX, NextJs",
     description: "Website Design, Web Developement",
-    client: "Femi",
+    client: "Dreamy",
   },
   {
     id: 2,
-    img: "/../assets/projectsimg/Femi.png",
+    img: "/../assets/projectsimg/KaterDesktop.png",
     tools: "UIUX, NextJs",
     description: "Website Design, Web Developement",
-    client: "Femi",
+    client: "Kater",
   },
   {
     id: 3,
     img: "/../assets/projectsimg/alliance.png",
     tools: "UIUX, NextJs",
     description: "Website Design, Web Developement",
-    client: "Femi",
+    client: "Alliance Avenues",
   },
 ];

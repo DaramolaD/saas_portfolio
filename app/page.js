@@ -11,8 +11,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex flex-col">
-      <Header />
+    <main className="flex flex-col relative">
+      {/* <Header /> */}
       <Hero />
       <ProjectPreview />
       <About />

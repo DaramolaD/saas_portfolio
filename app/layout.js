@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import { poppins } from "./font";
 import "./globals.css";
 
@@ -11,7 +12,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body className={`${poppins.className} relative`}>
+        <Header />
+        {children}
+        </body>
     </html>
   );
 }
