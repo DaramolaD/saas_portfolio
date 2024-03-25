@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import { animate, useMotionValue, motion } from "framer-motion";
 import useMeasure from "react-use-measure";
-import { render } from "react-dom";
 
 const VerticalScrolling = ({ children }) => {
   const [ref, { width }] = useMeasure();
