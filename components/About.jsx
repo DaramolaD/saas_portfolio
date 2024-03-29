@@ -40,15 +40,16 @@ const About = () => {
             <br /> Ready to take your startup to the <span>next level?</span>
           </p>
         </div>
-        <div className="cta flex gap-0 items-center pt-5 gap-5">
+        <div className="cta flex flex-wrap items-start mt-8 gap-5">
+          
+          <p className="aboutPara text-base leading-normal lg:leading-normal lg:text-2xl text-white71">
+            Don&apos;t miss out - your success story starts today.
+          </p>
           <Button variant="default" size="lg" className="mr-5 ">
             <span className="text-lg">Schedule A Call</span>
             <CalendarIcon className="ml5" />
           </Button>
 
-          <p className="aboutPara text-base leading-normal lg:leading-normal lg:text-2xl text-white71">
-            Don&apos;t miss out - your success story starts today.
-          </p>
         </div>
       </div>
     </div>
