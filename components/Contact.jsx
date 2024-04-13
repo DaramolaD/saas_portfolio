@@ -8,9 +8,9 @@ const Contact = () => {
     <div className="bg-bg1-normal w-full h-fit flex justify-center py-28" id="contact">
       <div className="relative max-w-screen-2xl gap-12 w-full flex items-start flex-col px-5">
         <SectionHeader>Contact</SectionHeader>
-        <div className="grid md:pl-10 gap-10 max-w-[700px] w-full">
+        <div className="grid pl-0 md:pl-10 gap-10 max-w-[700px] w-full">
           <div className="flex w-full flex-wrap gap-5">
-            <div className="flex flex-1 flex-col w-full max-w-sm item-start gap-5">
+            <div className="flex flex-1 flex-col w-full item-start gap-5">
               <label
                 htmlFor="name"
                 className="text-lg leading-normal text-white"
@@ -21,10 +21,10 @@ const Contact = () => {
                 id="name"
                 type="text"
                 placeholder="Name"
-                className="p-4 rounded-md bg-bg2-400 text-white placeholder-white"
+                className="p-4 rounded-md bg-bg2-400 w-full text-white placeholder-white"
               />
             </div>
-            <div className="flex flex-1 flex-col w-full max-w-sm item-start gap-5">
+            <div className="flex flex-1 flex-col w-full item-start gap-5">
               <label
                 htmlFor="email"
                 className="text-lg leading-normal text-white"
@@ -35,7 +35,7 @@ const Contact = () => {
                 id="email"
                 type="email"
                 placeholder="Email"
-                className="p-4 rounded-md bg-bg2-400 text-white placeholder-white"
+                className="p-4 rounded-md bg-bg2-400 w-full text-white placeholder-white"
               />
             </div>
           </div>
@@ -55,7 +55,7 @@ const Contact = () => {
           </div>
           <Button variant="default" size="lg" className="w-fit max-w-[150px]">Submit</Button>
         </div>
-        {/* <ContainerStroke>C</ContainerStroke> */}
+        <ContainerStroke>C</ContainerStroke>
       </div>
     </div>
   );
