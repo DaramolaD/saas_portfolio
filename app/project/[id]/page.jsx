@@ -108,7 +108,7 @@ const ProjecItem = () => {
                   <div className="grid text-white71 flex-1 gap-5">
                     <h2 className="text-xl italic">Full Page:</h2>
                   </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-start max-h-[3000px] overflow-hidden h-full">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-start max-h-[1000px] overflow-hidden h-full">
                     {selectedProject.fullView.map(({ img, id }) => (
                       <Image
                         src={img}
