@@ -13,10 +13,10 @@ const Projects = () => {
           <Button variant="default" size="lg">
             All
           </Button>
-          <Button variant="outline" size="lg">
+          <Button variant="outline" size="lg" className="text-base md:text-lg">
             Web Development
           </Button>
-          <Button variant="outline" size="lg">
+          <Button variant="outline" size="lg" className="text-base md:text-lg">
             Design
           </Button>
         </div>

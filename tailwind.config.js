@@ -57,8 +57,8 @@ module.exports = {
           darkActive: "#2D6E4D",
           darkDarker: "#23553C",
           outline: "rgba(100, 244, 172, 0.03)",
-          // DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          nav: "#64f4accc"
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",

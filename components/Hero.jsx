@@ -7,15 +7,15 @@ const Hero = () => {
   return (
     <div className="relative w-full bg-bg2-100 h-full pb-[100px] pt-[200px] flex items-center justify-center">
       <div className="max-w-screen-2xl">
-        <div className="items-center justify-center flex flex-col w-full max-w-screen-2xl px-10 gap-8">
+        <div className="items-center justify-center flex flex-col w-full max-w-screen-2xl px-5 sm:px-10 gap-8">
           <h1
-            className={`text-6xl leading-normal 2xl:text-7xl 2xl:leading-normal text-center text-white ${kaushanScript.className}`}
+            className={`text-5xl text-balance md:text-6xl leading-normal 2xl:text-7xl 2xl:leading-normal text-center text-white ${kaushanScript.className}`}
           >
             Fuel Your
             <span className="text-primary"> Startup&apos;s Success</span> <br />
             with Frontend Expertise
           </h1>
-          <p className="text-white71 text-2xl 2xl:text-3xl 2xl:leading-normal text-center font-light leading-normal max-w-[800px]">
+          <p className="text-white71 text-xl md:text-2xl 2xl:text-3xl 2xl:leading-normal text-center font-light leading-normal max-w-[800px]">
             Let Me Turbocharge Your Startup&apos;s Digital Journey: <br /> Drive
             Growth and Scale Your Product
           </p>

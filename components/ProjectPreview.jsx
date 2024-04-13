@@ -12,20 +12,24 @@ const imgList = [
   },
   {
     id: 2,
-    url: "/assets/projectsImg/feha.png",
-  },
-  {
-    id: 3,
     url: "/assets/projectsImg/KaterDesktop.png",
   },
   {
-    id: 4,
-    url: "/assets/projectsImg/KaterIpad.png",
-  },
-  {
-    id: 5,
+    id: 3,
     url: "/assets/projectsImg/phone.png",
   },
+  {
+    id: 4,
+    url: "/assets/projectsImg/joinAttainNow.jpg",
+  },
+  {
+    id: 3,
+    url: "/assets/projectsImg/iPhone16.png",
+  },
+  // {
+  //   id: 4,
+  //   url: "/assets/projectsImg/iPhone16(3).jpg",
+  // },
 ];
 
 const ProjectPreview = () => {
