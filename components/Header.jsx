@@ -52,7 +52,7 @@ const Header = () => {
               className="w-6 sm:w-8 sm:h-8 md:hidden text-white h-20 mr-12"
               onClick={handleToggle}
             />
-            <div className="grid divide-y border-primary/50 w-full">
+            <div className="grid divide-y border-primary/50 w-full" onClick={handleToggle}>
               <Link
                 href="/"
                 className="w-full flex items-center justify-start h-20 hover:bg-primary-nav hover:justify-center transition ease-in-out"

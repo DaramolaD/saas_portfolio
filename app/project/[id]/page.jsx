@@ -121,36 +121,36 @@ export default ProjecItem;
 const portfolioPartOther = [
   {
     id: 9,
-    img: "/../assets/projectsimg/FemiHome.png",
+    img: "/assets/projectsimg/FemiHome.png",
   },
   {
     id: 10,
-    img: "/../assets/projectsimg/Femi-Design-Project-Detail.png",
+    img: "/assets/projectsimg/Femi-Design-Project-Detail.png",
   },
 ];
 const portfolioPart = [
   {
     id: 1,
-    img: "/../assets/projectsimg/KaterDesktop.png",
+    img: "/assets/projectsimg/KaterDesktop.png",
   },
   {
     id: 2,
-    img: "/../assets/projectsimg/about.png",
+    img: "/assets/projectsimg/about.png",
   },
   {
     id: 3,
-    img: "/../assets/projectsimg/service.png",
+    img: "/assets/projectsimg/service.png",
   },
   {
     id: 5,
-    img: "/../assets/projectsimg/process.png",
+    img: "/assets/projectsimg/process.png",
   },
   {
     id: 6,
-    img: "/../assets/projectsimg/testimonies.png",
+    img: "/assets/projectsimg/testimonies.png",
   },
   {
     id: 8,
-    img: "/../assets/projectsimg/otherProject.png",
+    img: "/assets/projectsimg/otherProject.png",
   },
 ];

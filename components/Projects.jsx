@@ -5,6 +5,30 @@ import ContainerStroke from "./ContainerStroke";
 import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
+  const projectData = [
+    {
+      id: 1,
+      img: "/assets/projectsImg/joinAttainNow.jpg",
+      tools: "UIUX, NextJs",
+      description: "Website Design",
+      client: "JoinAttain",
+    },
+    {
+      id: 2,
+      img: "/assets/projectsImg/KaterDesktop.png",
+      tools: "UIUX, NextJs",
+      description: "Website Design, Web Developement",
+      client: "Kater",
+    },
+    {
+      id: 3,
+      img: "/assets/projectsImg/alliance.png",
+      tools: "UIUX, NextJs",
+      description: "Website Design, Web Developement",
+      client: "Alliance Avenues",
+    },
+  ];
+  
   return (
     <div className="bg-bg1-normal w-full h-fit flex justify-center py-28" id="projects">
       <div className="relative max-w-screen-2xl gap-12 w-full flex items-start flex-col px-5">
@@ -39,26 +63,3 @@ const Projects = () => {
 
 export default Projects;
 
-const projectData = [
-  {
-    id: 1,
-    img: "/assets/projectsimg/TraquilHaven.png",
-    tools: "UIUX, NextJs",
-    description: "Website Design, Web Developement",
-    client: "Dreamy",
-  },
-  {
-    id: 2,
-    img: "/assets/projectsimg/KaterDesktop.png",
-    tools: "UIUX, NextJs",
-    description: "Website Design, Web Developement",
-    client: "Kater",
-  },
-  {
-    id: 3,
-    img: "/assets/projectsimg/alliance.png",
-    tools: "UIUX, NextJs",
-    description: "Website Design, Web Developement",
-    client: "Alliance Avenues",
-  },
-];
