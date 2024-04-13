@@ -5,11 +5,11 @@ import { CalendarIcon } from "@radix-ui/react-icons";
 
 const Hero = () => {
   return (
-    <div className="relative w-full bg-bg2-100 h-full pb-[100px] pt-[200px] flex items-center justify-center">
+    <div className="relative w-full bg-bg2-100 h-full pb-[100px] pt-28 sm:pt-[200px] flex items-center justify-center">
       <div className="max-w-screen-2xl">
         <div className="items-center justify-center flex flex-col w-full max-w-screen-2xl px-5 sm:px-10 gap-8">
           <h1
-            className={`text-5xl text-balance md:text-6xl leading-normal 2xl:text-7xl 2xl:leading-normal text-center text-white ${kaushanScript.className}`}
+            className={`text-[45px] text-balance leading-tight md:text-6xl 2xl:text-7xl 2xl:leading-normal text-center text-white ${kaushanScript.className}`}
           >
             Fuel Your
             <span className="text-primary"> Startup&apos;s Success</span> <br />
