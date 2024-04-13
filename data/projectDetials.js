@@ -113,13 +113,12 @@ export const projectDetails = {
     ],
     introImg: {
       imgUrl: "/assets/projectsImg/JoinAttainIntroImg.jpg",
-    //   imgUrl: "/assets/projectsImg/joinAttainNow.jpg",
       alt: "views of JoinAttain website",
     },
     preImg: [
       {
         id: 1,
-        img: "/assets/projectsImg/JoinAttainNow.jpg",
+        img: "/assets/projectsImg/joinAttainNow.jpg",
       },
       {
         id: 2,
@@ -131,7 +130,7 @@ export const projectDetails = {
       },
       {
         id: 5,
-        img: "/assets/projectsImg/iphone13.png",
+        img: "/assets/projectsImg/iPhone13.png",
       },
       {
         id: 6,
