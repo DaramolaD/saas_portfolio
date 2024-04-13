@@ -1,6 +1,8 @@
 import Header from "@/components/Header";
 import { poppins } from "./font";
 import "./globals.css";
+import { ErrorBoundary } from "next/dist/client/components/error-boundary";
+import Error from "@/components/Error";
 
 export const metadata = {
   title:
@@ -13,9 +15,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${poppins.className} relative`}>
-        <Header />
-        {children}
-        </body>
+        {/* <ErrorBoundary fallback={<Error />}> */}
+          <Header />
+          {children}
+        {/* </ErrorBoundary> */}
+      </body>
     </html>
   );
 }

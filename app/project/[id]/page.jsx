@@ -1,28 +1,33 @@
+"use client";
 import { kaushanScript } from "@/app/font";
 import { Button } from "@/components/ui/button";
+import { projectDetails } from "@/data/projectDetials";
 import { CalendarIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
+import { notFound, useParams } from "next/navigation";
 import React from "react";
 
 const ProjecItem = () => {
+  const params = useParams();
+  const selectedProject = projectDetails[params.id];
+
+  if (!selectedProject) {
+    notFound();
+  }
+  console.log("selectedProject", selectedProject);
   return (
     <div className="relative w-full bg-bg2-100 flex items-center justify-center">
       <div className="max-w-screen-2xl">
-        <div className="items-start p-36 justify-start flex flex-col w-full max-w-screen-2xl px-10 gap-8">
+        <div className="items-start p-36 justify-start flex flex-col w-full max-w-screen-2xl px-[10px] md:px-10 gap-8">
           <h1
             className={`text-2xl leading-normal 2xl:text-3xl 2xl:leading-normal text-center text-white ${kaushanScript.className}`}
           >
-            Kater&apos;s Portfolio
+            {selectedProject.title}
           </h1>
           <div className="flex flex-wrap gap-20 gap-y-10 flex-col md:flex-row">
             <div className="grid text-white71 flex-1 gap-5">
               <h2 className="text-lg italic">Background:</h2>
-              <p>
-                This project entails the development of a freelancer portfolio
-                for a branding expert known as Kater. Kater is a talented
-                individual seeking to expand his clientele and reach a wider
-                audience by creating a professional portfolio.
-              </p>
+              <p>{selectedProject.background}</p>
             </div>
             <div className="flex flex-1 md:justify-center item-center w-fit gap-20 flex-wrap gap-y-8">
               <div className="grid text-white71 h-fit gap-3 md:gap-5">
@@ -31,76 +36,98 @@ const ProjecItem = () => {
               </div>
               <div className="grid text-white71 h-fit gap-3 md:gap-5">
                 <h2 className="text-lg italic">Tools</h2>
-                <p>Figma, Nextjs, Calandly</p>
+                <p>{selectedProject.tools}</p>
               </div>
             </div>
           </div>
           <div className="grid gap-10">
             <div className="flex mt-14 justify-center">
               <Image
-                src="/../assets/projectsimg/views.png"
+                src={selectedProject.introImg.imgUrl}
                 fill
                 className="w-full !relative max-w-fit max-h-[300px] object-center object-contain"
-                alt="views of Kater portfolios"
+                alt={selectedProject.introImg.alt}
               />
             </div>
+            {selectedProject.highlights && (
+              <div className="grid">
+                <div className="grid text-white71 flex-1 gap-5">
+                  <h2 className="text-xl">Transformation Highlights:</h2>
+                  <div className="grid">
+                    <ol className="gap-2 grid">
+                      {selectedProject.highlights.map(
+                        ({ id, title, details }) => (
+                          <li className="list-disc" key={id}>
+                            <p className="">{title}</p>
+                            <p className="text-sm">{details}</p>
+                          </li>
+                        )
+                      )}
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            )}
             <div className="grid">
               <div className="grid text-white71 flex-1 gap-5">
                 <h2 className="text-xl italic">Research:</h2>
                 <h2 className="text-lg italic">Competitive analysis:</h2>
-                <p>
-                  I selected brand agencies inn place of just freeelancers,
-                  because of strucutre, the amount of experince, that is been
-                  put to work, to retain their name, compare to just a
-                  freelancers, who may just to make money than a name. To
-                  identify potential areas were brand agaencies stand out, and
-                  getto know what is working, I conducted a competitive analysis
-                  of 11 prominent brand agencies websites before beginning the
-                  design phase. By taking screenshots and noting common
-                  features, I was able to observe how competitors solve similar
-                  problems. By interacting with the websites, I also evaluated
-                  potential areas for improvement and feature changes.
-                </p>
+                <p>{selectedProject.research}</p>
               </div>
             </div>
-            <div className="grid gap-10">
-              <div className="grid text-white71 flex-1 gap-5">
-                <h2 className="text-xl italic">High Fidelity:</h2>
-              </div>
-              <div className="grid grid-cols-3 gap-5 items-start">
-                {portfolioPart.map(({ img, id }) => (
-                  <Image
-                    src={img}
-                    fill
-                    key={id}
-                    className="w-full !relative max-w-fit object-center object-contain"
-                    alt="Picture of the author"
-                  />
-                ))}
-              </div>
+            {selectedProject.preImg && (
               <div className="grid gap-10">
                 <div className="grid text-white71 flex-1 gap-5">
-                  <h2 className="text-xl italic">Full Page:</h2>
+                  <h2 className="text-xl italic">High Fidelity:</h2>
                 </div>
-                <div className="grid grid-cols-2 gap-5 items-start">
-                  {portfolioPartOther.map(({ img, id }) => (
+                <div className="grid grid-cols-1 justify-items-center sm:grid-cols-2 md:grid-cols-3 gap-5 items-start">
+                  {selectedProject.preImg.map(({ id, img, maxHeight }) => (
+                    // {portfolioPart.map(({ img, id }) => (
                     <Image
                       src={img}
                       fill
                       key={id}
-                      className="w-full !relative object-top object-contain"
+                      className={`w-full !relative max-w-full md:max-w-fit object-center rounded-xl object-contain ${maxHeight && `max-h-[${maxHeight}]`}`}
                       alt="Picture of the author"
                     />
                   ))}
                 </div>
               </div>
+            )}
+            <div className="grid gap-10">
+              {selectedProject.outcome && (
+                <div className="grid gap-10">
+                  <div className="grid text-white71 flex-1 gap-5">
+                    <h2 className="text-xl italic">Outcome:</h2>
+                    <p>{selectedProject.outcome}</p>
+                  </div>
+                </div>
+              )}
+              {selectedProject.fullView && (
+                <div className="grid gap-10">
+                  <div className="grid text-white71 flex-1 gap-5">
+                    <h2 className="text-xl italic">Full Page:</h2>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-start max-h-[3000px] overflow-hidden h-full">
+                    {selectedProject.fullView.map(({ img, id }) => (
+                      <Image
+                        src={img}
+                        fill
+                        key={id}
+                        className="w-full !relative object-top object-contain h-full"
+                        alt="Picture of the author"
+                      />
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
           <div className="grid w-full justify-center mt-20 gap-5">
             <p className="text-lg text-white71">
               Are you convienced: Let Forge your Vision to Reality
             </p>
-            <div className="flex items-center justify-center cta gap-5">
+            <div className="flex flex-wrap sm:flex-nowrap items-center justify-center cta gap-5">
               <Button variant="default" size="lg">
                 <span className="text-lg">Schedule A Call</span>
                 <CalendarIcon className="ml5" />
@@ -121,36 +148,36 @@ export default ProjecItem;
 const portfolioPartOther = [
   {
     id: 9,
-    img: "/assets/projectsimg/FemiHome.png",
+    img: "/assets/projectsImg/FemiHome.png",
   },
   {
     id: 10,
-    img: "/assets/projectsimg/Femi-Design-Project-Detail.png",
+    img: "/assets/projectsImg/Femi-Design-Project-Detail.png",
   },
 ];
 const portfolioPart = [
   {
     id: 1,
-    img: "/assets/projectsimg/KaterDesktop.png",
+    img: "/assets/projectsImg/KaterDesktop.png",
   },
   {
     id: 2,
-    img: "/assets/projectsimg/about.png",
+    img: "/assets/projectsImg/about.png",
   },
   {
     id: 3,
-    img: "/assets/projectsimg/service.png",
+    img: "/assets/projectsImg/service.png",
   },
   {
     id: 5,
-    img: "/assets/projectsimg/process.png",
+    img: "/assets/projectsImg/process.png",
   },
   {
     id: 6,
-    img: "/assets/projectsimg/testimonies.png",
+    img: "/assets/projectsImg/testimonies.png",
   },
   {
     id: 8,
-    img: "/assets/projectsimg/otherProject.png",
+    img: "/assets/projectsImg/otherProject.png",
   },
 ];
