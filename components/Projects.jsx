@@ -42,21 +42,21 @@ export default Projects;
 const projectData = [
   {
     id: 1,
-    img: "/../assets/projectsimg/TraquilHaven.png",
+    img: "/assets/projectsimg/TraquilHaven.png",
     tools: "UIUX, NextJs",
     description: "Website Design, Web Developement",
     client: "Dreamy",
   },
   {
     id: 2,
-    img: "/../assets/projectsimg/KaterDesktop.png",
+    img: "/assets/projectsimg/KaterDesktop.png",
     tools: "UIUX, NextJs",
     description: "Website Design, Web Developement",
     client: "Kater",
   },
   {
     id: 3,
-    img: "/../assets/projectsimg/alliance.png",
+    img: "/assets/projectsimg/alliance.png",
     tools: "UIUX, NextJs",
     description: "Website Design, Web Developement",
     client: "Alliance Avenues",

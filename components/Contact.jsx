@@ -55,7 +55,7 @@ const Contact = () => {
           </div>
           <Button variant="default" size="lg" className="w-fit max-w-[150px]">Submit</Button>
         </div>
-        <ContainerStroke>C</ContainerStroke>
+        {/* <ContainerStroke>C</ContainerStroke> */}
       </div>
     </div>
   );
