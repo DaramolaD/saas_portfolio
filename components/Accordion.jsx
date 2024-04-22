@@ -35,14 +35,14 @@ const serviceListing = [
         id: 1,
         list: "UI/UX Design",
       },
-      {
-        id: 2,
-        list: "Wireframing and Prototyping",
-      },
-      {
-        id: 3,
-        list: "User Research and Usability Testing",
-      },
+      // {
+      //   id: 2,
+      //   list: "Wireframing and Prototyping",
+      // },
+      // {
+      //   id: 3,
+      //   list: "User Research and Usability Testing",
+      // },
     ],
   },
   {
@@ -62,37 +62,37 @@ const serviceListing = [
         id: 3,
         list: "E-commerce Solutions",
       },
+      // {
+      //   id: 4,
+      //   list: "Accessibility Compliance",
+      // },
       {
         id: 4,
-        list: "Accessibility Compliance",
-      },
-      {
-        id: 5,
         list: "Performance Optimization",
       },
       {
-        id: 6,
+        id: 5,
         list: "Integration Services",
       },
     ],
   },
-  {
-    id: 3,
-    title: "Consultation and Support Services",
-    item: "consulatation",
-    list: [
-      {
-        id: 1,
-        list: "Consultation and Strategy",
-      },
-      {
-        id: 2,
-        list: "Training and Workshops",
-      },
-      {
-        id: 3,
-        list: "Maintenance and Support",
-      },
-    ],
-  },
+  // {
+  //   id: 3,
+  //   title: "Consultation and Support Services",
+  //   item: "consulatation",
+  //   list: [
+  //     {
+  //       id: 1,
+  //       list: "Consultation and Strategy",
+  //     },
+  //     {
+  //       id: 2,
+  //       list: "Training and Workshops",
+  //     },
+  //     {
+  //       id: 3,
+  //       list: "Maintenance and Support",
+  //     },
+  //   ],
+  // },
 ];

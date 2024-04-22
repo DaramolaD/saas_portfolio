@@ -41,11 +41,11 @@ export const projectDetails = {
     fullView: [
       {
         id: 9,
-        img: "/assets/projectsImg/FemiHome.png",
+        img: "/assets/projectsImg/KaterFullPage.jpg",
       },
       {
         id: 10,
-        img: "/assets/projectsImg/Femi-Design-Project-Detail.png",
+        img: "/assets/projectsImg/Femi_Design_Project_Detail.jpg",
       },
     ],
   },
@@ -122,33 +122,45 @@ export const projectDetails = {
       },
       {
         id: 2,
-        img: "/assets/projectsImg/MacBookPro14.jpg",
+        img: "/assets/projectsImg/JoinAttainBenefits.jpg",
       },
       {
         id: 3,
-        img: "/assets/projectsImg/multipleMobileScreen.jpg",
+        img: "/assets/projectsImg/JoinAttainFeatures.jpg",
+      },
+      {
+        id: 4,
+        img: "/assets/projectsImg/JoinAttainCaseStudy.jpg",
       },
       {
         id: 5,
-        img: "/assets/projectsImg/iPhone13.png",
+        img: "/assets/projectsImg/JoinAttainCTA.jpg",
       },
       {
         id: 6,
+        img: "/assets/projectsImg/JoinAttainMobileViews.jpg",
+      },
+      {
+        id: 7,
+        img: "/assets/projectsImg/iPhone13.png",
+      },
+      {
+        id: 8,
         img: "/assets/projectsImg/iPhone16.png",
         maxHeight: "300px"
       },
       {
-        id: 8,
-        img: "/assets/projectsImg/Screen.jpg",
+        id: 9,
+        img: "/assets/projectsImg/multipleMobileScreen.jpg",
       },
     ],
     fullView: [
       {
-        id: 9,
+        id: 1,
         img: "/assets/projectsImg/JoinAttainMain.jpg",
       },
       {
-        id: 10,
+        id: 2,
         img: "/assets/projectsImg/JoinAttainMobile.jpg",
       },
     ],
