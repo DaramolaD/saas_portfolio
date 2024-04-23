@@ -19,10 +19,10 @@ const ProjectCard = ({ client, img, tools, description, liveLink }) => {
         />
       </div>
       <div className="overlayDetail hidden absolute items-start justify-center w-full bottom-0 left-0 ease-in duration-300">
-        <div className="w-full flex p-5 bg-bg2-100 justify-between items-start">
+        <div className="w-full flex p-5 bg-bg2-100 justify-between items-start gap-5">
           <h4 className="sm:text-base lg:text-lg text-white">{client}</h4>
-          <div className="flex flex-col gap-4">
-            <p className="sm:text-base lg:text-lg text-wrap text-white">
+          <div className="flex flex-col gap-4 items-end">
+            <p className="sm:text-base lg:text-lg text-wrap text-white text-end">
               {description}
             </p>
             <p className="sm:text-base lg:text-lg text-primary-normal">

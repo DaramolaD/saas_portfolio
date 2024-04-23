@@ -38,11 +38,7 @@ const Contact = () => {
       return errorMsg();
     }
   }, [state.succeeded]);
-  const handleSubmit45 = (e) => {
-    e.preventDefault();
-    console.log(formData);
-    // Send formData to server or perform other actions
-  };
+
   return (
     <div
       className="bg-bg1-normal w-full h-fit flex justify-center py-28"
@@ -50,7 +46,7 @@ const Contact = () => {
     >
       <div className="relative max-w-screen-2xl gap-12 w-full flex items-start flex-col px-5">
         <SectionHeader>Contact</SectionHeader>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="relative z-50">
           <div className="grid pl-0 md:pl-10 gap-10 max-w-[700px] w-full">
             <div className="flex w-full flex-wrap gap-5">
               <div className="flex flex-1 flex-col w-full item-start gap-5">

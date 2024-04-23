@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "./ui/button";
 import { kaushanScript } from "@/app/font";
 import { CalendarIcon } from "@radix-ui/react-icons";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -24,8 +25,14 @@ const Hero = () => {
               <span className="text-lg">Schedule A Call</span>
               <CalendarIcon className="ml5" />
             </Button>
-            <Button variant="outline" size="lg">
-              <span className="text-lg">Projects</span>
+            <Button
+              variant="outline"
+              size="lg"
+              // className="hidden md:block bg-transparent"
+            >
+              <Link href="/#projects">
+                <span className="text-lg">Projects</span>
+              </Link>
             </Button>
           </div>
         </div>

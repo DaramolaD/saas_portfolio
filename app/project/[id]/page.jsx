@@ -14,7 +14,7 @@ const ProjecItem = () => {
   if (!selectedProject) {
     notFound();
   }
-  console.log("selectedProject", selectedProject);
+
   return (
     <div className="relative w-full bg-bg2-100 flex items-center justify-center">
       <div className="max-w-screen-2xl">
@@ -116,7 +116,9 @@ const ProjecItem = () => {
                         src={img}
                         fill
                         key={id}
-                        className={`w-full !relative object-top object-contain h-full ${id == 2 ? "px-5" : ""}`}
+                        className={`w-full !relative object-top object-contain h-full ${
+                          id == 2 ? "px-5" : ""
+                        }`}
                         alt="Picture of the author"
                       />
                     ))}

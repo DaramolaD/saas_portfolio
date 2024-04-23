@@ -9,7 +9,7 @@ const Projects = () => {
     {
       id: 1,
       img: "/assets/projectsImg/joinAttainNow.jpg",
-      tools: "UIUX, NextJs",
+      tools: "UIUX",
       description: "Website Design",
       client: "JoinAttain",
     },
@@ -57,7 +57,7 @@ const Projects = () => {
             />
           ))}
         </div>
-        <Button variant="outline" size="lg">View All</Button>
+        {/* <Button variant="outline" size="lg">View All</Button> */}
         <ContainerStroke>P</ContainerStroke>
       </div>
     </div>
