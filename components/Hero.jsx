@@ -28,7 +28,6 @@ const Hero = () => {
             <Button
               variant="outline"
               size="lg"
-              // className="hidden md:block bg-transparent"
             >
               <Link href="/#projects">
                 <span className="text-lg">Projects</span>

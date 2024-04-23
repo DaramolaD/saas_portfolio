@@ -26,7 +26,7 @@ const Header = () => {
             <Link href="/#about">About</Link>
           </Button>
           <Button variant="link" className="text-sm md:text-base lg:text-lg">
-            <Link href="/#expertise">Expertise</Link>
+            <Link href="/#services">Expertise</Link>
           </Button>
           <Button variant="link" className="text-sm md:text-base lg:text-lg">
             <Link href="/#projects">Project</Link>
@@ -68,7 +68,7 @@ const Header = () => {
               </Link>
               {/* <div className="w-full border-t-2 border-primary/50"></div> */}
               <Link
-                href="/#expertise"
+                href="/#services"
                 className="w-full flex items-center justify-start h-20 hover:bg-primary-nav hover:justify-center"
               >
                 <p className="w-5/6 text-center text-white">Expertise</p>
