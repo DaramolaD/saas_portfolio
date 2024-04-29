@@ -8,12 +8,14 @@ import {
   HamburgerMenuIcon,
 } from "@radix-ui/react-icons";
 import Link from "next/link";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const handleToggle = () => {
     setToggleMenu(!toggleMenu);
   };
+  
   return (
     <div className="w-full fixed top-0 bg-bg1-normal z-50 flex justify-center">
       <div className="flex items-center justify-between max-w-screen-2xl w-full py-5 px-5 sm:px-12">
@@ -28,7 +30,7 @@ const Header = () => {
           <Button variant="link" className="text-sm md:text-base lg:text-lg">
             <Link href="/#services">Expertise</Link>
           </Button>
-          <Button variant="link" className="text-sm md:text-base lg:text-lg">
+          <Button variant="link" className="text-sm md:text-base lg:text-lg" onClick={() => sendGTMEvent({ event: "buttonClicked", value: "xyz"})}>
             <Link href="/#projects">Project</Link>
           </Button>
         </div>

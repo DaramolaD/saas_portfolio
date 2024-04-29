@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import { poppins } from "./font";
 import "./globals.css";
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { ErrorBoundary } from "next/dist/client/components/error-boundary";
 import Error from "@/components/Error";
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
           {children}
         {/* </ErrorBoundary> */}
       </body>
+      <GoogleAnalytics gaId="G-GRD05YZYQ3" />
     </html>
   );
 }
