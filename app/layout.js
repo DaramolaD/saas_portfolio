@@ -4,6 +4,7 @@ import "./globals.css";
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { ErrorBoundary } from "next/dist/client/components/error-boundary";
 import Error from "@/components/Error";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata = {
   title:
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
         {/* </ErrorBoundary> */}
       </body>
       <GoogleAnalytics gaId="G-GRD05YZYQ3" />
+      <Analytics/>
     </html>
   );
 }
