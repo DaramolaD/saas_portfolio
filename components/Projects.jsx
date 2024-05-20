@@ -9,14 +9,14 @@ const Projects = () => {
     {
       id: 1,
       img: "/assets/projectsImg/joinAttainNow.jpg",
-      tools: "UIUX",
-      description: "Website Design",
+      tools: "Figma",
+      description: "Website Re-Design",
       client: "JoinAttain",
     },
     {
       id: 2,
       img: "/assets/projectsImg/KaterDesktop.png",
-      tools: "UIUX, NextJs",
+      tools: "Figma, Nextjs, Tailwindcss",
       description: "Website Design, Web Developement",
       client: "Kater",
     },
@@ -24,7 +24,7 @@ const Projects = () => {
       id: 3,
       // img: "/assets/projectsImg/alliance.png",
       img: "/assets/projectsImg/allianceImg.jpg",
-      tools: "UIUX, NextJs",
+      tools: "Figma, Nextjs, Tailwindcss",
       description: "Website Design, Web Developement",
       client: "Alliance Avenues",
       liveLink: "https://alliance-avenues.netlify.app/"
@@ -46,7 +46,7 @@ const Projects = () => {
             Design
           </Button>
         </div> */}
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 items-center justify-between">
+        <div className="w-full flex flex-col gap-10 items-center justify-between">
           {projectData.map(({ id, img, tools, description, client, liveLink }) => (
             <ProjectCard
               key={id}

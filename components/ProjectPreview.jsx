@@ -59,7 +59,7 @@ const ProjectPreview = () => {
           ))}
         </VerticalScrolling> */}
         <div className="ark">
-          <Marquee>
+          <Marquee speed={100}>
             {imgList.map(({ id, url }) => (
               <Image
                 src={url}
@@ -67,9 +67,7 @@ const ProjectPreview = () => {
                 height={442}
                 key={id}
                 className="!w-full !max-w-fit !max-h-[300px] object-center object-contain mx-5"
-                
                 alt="Picture of the author"
-                
               />
             ))}
           </Marquee>

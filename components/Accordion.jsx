@@ -8,7 +8,7 @@ import {
 
 const AccordionContainer = () => {
   return (
-    <div className="md:pl-10 max-w-[750px] w-full">
+    <div className="md:pl-10 max-w-[750px] w-full z-50">
       {serviceListing.map(({ id, title, list, item }) => (
         <Accordion key={id} type="single" collapsible className="w-full bg-gradient-to-t from-bg2-300 to-bg2-320 rounded-md p-5 text-white">
           <AccordionItem value={item} className="border-none">
