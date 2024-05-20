@@ -1,37 +1,62 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React from "react";
+import { Button } from "./ui/button";
 
 const ProjectCard = ({ client, img, tools, description, liveLink }) => {
+  const router = useRouter();
   return (
-    <Link
-      href={liveLink ? liveLink : `project/${client}`}
-      className="relative z-10 rounded-sm overlayDetailCont hover:shadow-md hover:shadow-primary-normalHover"
-      style={{ backgroundImage: "/../assets/projectsimg/Femi.png" }}
-    >
-      <div className="img max-w-full h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px]">
-        <Image
-          src={img}
-          fill
-          style={{ ObjectFit: "cover" }}
-          alt="projectImg"
-          className="w-full rounded-xl"
-        />
-      </div>
-      <div className="overlayDetail hidden absolute items-start justify-center w-full bottom-0 left-0 ease-in duration-300">
-        <div className="w-full flex p-5 bg-bg2-100 justify-between items-start gap-5">
-          <h4 className="sm:text-base lg:text-lg text-white">{client}</h4>
-          <div className="flex flex-col gap-4 items-end">
-            <p className="sm:text-base lg:text-lg text-wrap text-white text-end">
-              {description}
+    <>
+      <div className="w-full flex flex-col md:flex-row flex-1 relative justify-between items-stretch h-auto rounded-3xl  bg-bg2-100">
+        <div
+          className="bg-contain bg-no-repeat bg-center w-full md:w-[60%] h-full min-h-[500px]"
+          style={{
+            backgroundImage: `url(${img})`,
+            // width: "500px",
+            // height: "500px",
+          }}
+        ></div>
+        <div className="w-full md:w-[40%] flex-col flex-1 sm:flex justify-between items-stretch gap-5 p-5 md:p-10 bg-bg2-100">
+          <h4 className="font-semibold text-xl lg:text-3xl text-white h-full">
+            {client}
+          </h4>
+          <div className="flex flex-wrap gap-10 justify-between items-start">
+            <p className="sm:text-lg lg:text-2xl text-wrap text-white text-end">
+              Project
             </p>
-            <p className="sm:text-base lg:text-lg text-primary-normal">
+
+            <div className="flex flex-col gap-4 items-end h-full">
+              <p className="sm:text-lg lg:text-2xl text-wrap text-white text-end">
+                {description}
+              </p>
+              {/* <p className="sm:text-base lg:text-lg text-primary-normal">
+            {tools}
+          </p> */}
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-10 justify-between items-center">
+            <p className="sm:text-lg lg:text-2xl text-wrap text-white text-end">
+              Tools
+            </p>
+            <p className="sm:text-lg lg:text-2xl text-wrap text-white text-end">
               {tools}
             </p>
           </div>
+          <Button
+            variant="default"
+            size="lg"
+            className="w-fit mt-10"
+            onClick={() =>
+              router.push(`${liveLink ? liveLink : `project/${client}`}`)
+            }
+          >
+            {liveLink ? "View Live Project" : "View"}
+          </Button>
         </div>
       </div>
-    </Link>
+    </>
   );
 };
 
