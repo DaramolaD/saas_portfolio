@@ -25,16 +25,16 @@ const ProjectCard = ({ client, img, tools, description, liveLink }) => {
           <div className="flex flex-col gap-5 md:gap-10">
             <div className="flex flex-wrap sm:flex-nowrap gap-4 justify-between items-start">
               <p className="sm:text-lg lg:text-2xl text-wrap text-white text-end">
-                Project
+                Project:
               </p>
 
-              <p className="sm:text-base lg:text-lg text-wrap text-white text-end">
+              <p className="sm:text-base lg:text-lg text-wrap text-white text-start sm:text-end">
                 {description}
               </p>
             </div>
-            <div className="flex flex-wrap sm:flex-nowrap gap-10 justify-between items-center">
+            <div className="flex flex-wrap sm:flex-nowrap gap-4 sm:gap-10 justify-between items-center">
               <p className="sm:text-lg lg:text-2xl text-wrap text-white text-end">
-                Tools
+                Tools:
               </p>
               <p className="sm:text-base lg:text-lg text-wrap text-white text-end">
                 {tools}
