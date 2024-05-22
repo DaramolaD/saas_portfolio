@@ -28,7 +28,7 @@ const ProjectCard = ({ client, img, tools, description, liveLink }) => {
                 Project:
               </p>
 
-              <p className="sm:text-base lg:text-lg text-wrap text-white">
+              <p className="sm:text-base lg:text-lg text-wrap text-white italic">
                 {description}
               </p>
             </div>
@@ -36,7 +36,7 @@ const ProjectCard = ({ client, img, tools, description, liveLink }) => {
               <p className="sm:text-lg lg:text-2xl text-wrap text-white text-end">
                 Tools:
               </p>
-              <p className="sm:text-base lg:text-lg text-wrap text-white">
+              <p className="sm:text-base lg:text-lg text-wrap text-white italic">
                 {tools}
               </p>
             </div>
