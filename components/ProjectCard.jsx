@@ -23,7 +23,7 @@ const ProjectCard = ({ client, img, tools, description, liveLink }) => {
             {client}
           </h4>
           <div className="flex flex-col gap-5 md:gap-10">
-            <div className="flex flex-col sm:flex-row gap-4 justify-between items-start">
+            <div className="flex sm:flex-row gap-4 justify-between items-start">
               <p className="sm:text-lg lg:text-2xl text-wrap text-white text-end">
                 Project:
               </p>
@@ -32,7 +32,7 @@ const ProjectCard = ({ client, img, tools, description, liveLink }) => {
                 {description}
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-10 justify-between items-start">
+            <div className="flex sm:flex-row gap-4 sm:gap-10 justify-between items-start">
               <p className="sm:text-lg lg:text-2xl text-wrap text-white text-end">
                 Tools:
               </p>
