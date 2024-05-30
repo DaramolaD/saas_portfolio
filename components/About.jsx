@@ -5,51 +5,52 @@ import { CalendarIcon } from "@radix-ui/react-icons";
 
 const About = () => {
   return (
-    <div className="bg-bg1-normal w-full flex justify-center py-20 pb-24" id="about">
+    <div
+      className="bg-bg1-normal w-full flex justify-center py-20 pb-24"
+      id="about"
+    >
       <div className="flex flex-col px-5 max-w-screen-2xl w-full">
-        <div className="head text-white">
-          <h3 className="text-white71 text-4xl lg:text-5xl lg:leading-normal leading-normal">
-            Meet
-            <span
-              className={`${kaushanScript.className} ml-2 text-6xl text-white`}
+        <div className="head text-white gap-2">
+          <div className="flex items-center">
+            <h3 className="text-white71 text-4xl lg:text-5xl lg:leading-normal leading-normal">
+              Meet
+            </h3>
+            <h3
+              className={`${kaushanScript.className} ml-2 text-6xl bg-gradient-to-b from-primary to-white bg-clip-text text-transparent w-full`}
             >
               Daniel
-            </span>
-          </h3>
+            </h3>
+          </div>
           <p className="text-xl sm:text-2xl lg:text-3xl lg:leading-normal italic pt-1 leading-normal">
             Your Startup&apos;s Next.js ~ UI/UX Solution Partner
           </p>
         </div>
         <div className=" pt-5">
-          <p className="aboutPara text-base !leading-[1.8] lg:text-2xl text-white71">
-            Hey there! I&apos;m Daniel, and I&apos;m here to <span>turbocharge </span>
-            your startup&apos;s digital journey. With <span>Next.js </span>
-            expertise and a knack for intuitive <span>UI/UX design</span>, I
-            solve your startup&apos;s tech headaches so you can focus on
-            <span> growth</span>.
+          <p className="aboutPara text-base !leading-[1.8] lg:leading-normal lg:text-2xl text-white71">
+            Hi! I&apos;m Daniel, a <span>frontend developer</span> dedicated to
+            helping startups succeed online. With expertise in{" "}
+            <span>Next.js and UI/UX design</span>, I solve{" "}
+            <span>technical challenges</span> so you can focus on expanding your{" "}
+            <span>business</span>.
+          </p>
+          <br />
+          <p className="aboutPara text-base !leading-[1.8] lg:leading-normal lg:text-2xl text-white71">
+            Startups often struggle with limited <span>budgets</span>, tight{" "}
+            <span>deadlines</span>, and the need to make an <span>impact.</span>{" "}
+            I&apos;m here to <span>help</span>. I build fast, responsive,
+            scalable, optimize, user-centric web applications that not only look
+            great but also drive <span>engagement and growth.</span>
           </p>
           <p className="aboutPara text-base !leading-[1.8] lg:leading-normal lg:text-2xl text-white71">
-            <br /> Startups face tight budgets, looming <span>deadlines</span>,
-            and the pressure to stand out. Let me ease those{" "}
-            <span>burdens</span>. Whether it&apos;s lightning-fast{" "}
-            <span>performance</span> or captivating{" "}
-            <span>user experiences</span>, I tailor solutions to fit your{" "}
-            <span>needs</span>.
-          </p>
-          <p className="aboutPara text-base !leading-[1.8] lg:leading-normal lg:text-2xl text-white71">
-            <br /> Ready to take your startup to the <span>next level?</span>
+            <br /> Let&apos;s work together to elevate your startup&apos;s to
+            the <span>next level?</span>
           </p>
         </div>
         <div className="cta flex flex-wrap items-start mt-8 gap-5">
-          
-          <p className="aboutPara text-base leading-normal lg:leading-normal lg:text-2xl text-white71">
-            Don&apos;t miss out - your success story starts today.
-          </p>
           <Button variant="default" size="lg" className="mr-5 ">
             <span className="text-lg">Schedule A Call</span>
             <CalendarIcon className="ml5" />
           </Button>
-
         </div>
       </div>
     </div>
