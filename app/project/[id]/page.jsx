@@ -14,7 +14,6 @@ const ProjecItem = () => {
   if (!selectedProject) {
     notFound();
   }
-
   return (
     <div className="relative w-full bg-bg2-100 flex items-center justify-center">
       <div className="max-w-screen-2xl">

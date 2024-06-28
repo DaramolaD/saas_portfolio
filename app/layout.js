@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import { poppins } from "./font";
+import { poppins, DM, plusJakartaSans } from "./font";
 import "./globals.css";
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { ErrorBoundary } from "next/dist/client/components/error-boundary";
@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} relative`}>
+      <body className={`${plusJakartaSans.className} relative`}>
         {/* <ErrorBoundary fallback={<Error />}> */}
           <Header />
           {children}
