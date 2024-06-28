@@ -8,7 +8,7 @@ const Projects = () => {
   const projectData = [
     {
       id: 1,
-      img: "/assets/projectsImg/SynFlowCheck.jpg",
+      img: "/assets/projectsImg/SynflowCheck.jpg",
       tools: "Figma, Nextjs, Tailwind css",
       description:
         "SynFlow is a fintech management startup designed to help startups streamline their finances.",
