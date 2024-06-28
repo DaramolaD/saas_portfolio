@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "./ui/button";
-import { kaushanScript } from "@/app/font";
+import { kaushanScript, syne } from "@/app/font";
 import { CalendarIcon } from "@radix-ui/react-icons";
 
 const About = () => {
@@ -16,7 +16,7 @@ const About = () => {
               Meet
             </h3>
             <h3
-              className={`${kaushanScript.className} ml-2 text-6xl bg-gradient-to-b from-primary to-white bg-clip-text text-transparent w-full`}
+              className={`${syne.className} !italic ml-2 text-6xl bg-gradient-to-b from-primary to-white bg-clip-text text-transparent w-full`}
             >
               Daniel
             </h3>
@@ -35,8 +35,8 @@ const About = () => {
           </p>
           <br />
           <p className="aboutPara text-base !leading-[1.8] lg:leading-normal lg:text-2xl text-white71">
-            Startups often struggle with limited <span>budgets</span>, tight{" "}
-            <span>deadlines</span>, and the need to make an <span>impact.</span>{" "}
+          Startups often face limited <span>budgets</span>, tight{" "}
+            <span>deadlines</span>, and the pressure to make a significant <span>impact</span>{" "}quickly.
             I&apos;m here to <span>help</span>. I build fast, responsive,
             scalable, optimize, user-centric web applications that not only look
             great but also drive <span>engagement and growth.</span>
