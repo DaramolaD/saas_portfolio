@@ -22,28 +22,82 @@ const About = () => {
             </h3>
           </div>
           <p className="text-xl sm:text-2xl lg:text-3xl lg:leading-normal italic pt-1 leading-normal">
-            Your Startup&apos;s Next.js ~ UI/UX Solution Partner
+            Your Next.js and UI/UX Design Partner for SaaS Success
           </p>
         </div>
         <div className=" pt-5">
           <p className="aboutPara text-base !leading-[1.8] lg:leading-normal lg:text-2xl text-white71">
-            Hi! I&apos;m Daniel, a <span>frontend developer</span> dedicated to
-            helping startups succeed online. With expertise in{" "}
-            <span>Next.js and UI/UX design</span>, I solve{" "}
-            <span>technical challenges</span> so you can focus on expanding your{" "}
-            <span>business</span>.
+            Hi, I&apos;m Daniel, a{" "}
+            <span className="!text-white71 italic underline pr-[3px]">
+              frontend developer{" "} 
+            </span>{" "}{" "}passionate about helping startups thrive online. With a strong
+            background in{" "}
+            <span className="!text-white71 italic underline">Next.js</span> and{" "}
+            <span className="!text-white71 italic underline">UI/UX design</span>
+            , I tackle{" "}
+            <span className="!text-white71 italic underline">
+              technical hurdles
+            </span>{" "}
+            so you can concentrate on growing your{" "}
+            <span className="!text-white71 italic underline">business</span>.
           </p>
           <br />
+          <div className="grid gap-2">
+            <div className="grid gap-1 text-white71">
+              <h4 className="text-white text-lg sm:text-xl lg:text-2xl lg:leading-normal pt-1 leading-normal">
+                Why Choose Me:
+              </h4>
+              {/* <div className="flex pl-8">
+                <ul className="!list-disc">
+                  <li>
+                    <span className="text-white pl-2 ">
+                      I understand the unique challenges startups face,
+                      including limited budgets, tight deadlines, and the need
+                      to make a significant impact quickly.
+                    </span>{" "}
+                  </li>
+                  <li>
+                    <span className="text-white pl-2 ">
+                      My solutions not only look great but also drive engagement
+                      and growth, helping your startup succeed in a competitive
+                      market.
+                    </span>{" "}
+                  </li>
+                </ul>
+              </div> */}
+            </div>
+          </div>
+          <li className="aboutPara text-base !leading-[1.8] lg:leading-normal lg:text-xl text-white71">
+            <span className="italic">Understanding Startup Challenges:</span> I
+            know the challenges you face, from tight{" "}
+            <span className="!text-white71 italic underline">budgets</span> to
+            pressing{" "}
+            <span className="!text-white71 italic underline">deadlines</span>,
+            and the need to make a significant{" "}
+            <span className="!text-white71 italic underline">impact</span>{" "}
+            quickly.
+          </li>
+          <li className="aboutPara text-base !leading-[1.8] lg:leading-normal lg:text-xl text-white71">
+            <span className="italic">Impactful Solutions:</span> My designs not
+            only look{" "}
+            <span className="!text-white71 italic underline pr-[3px]">great</span> but
+            also drive{" "}
+            <span className="!text-white71 italic underline">engagement</span>{" "}
+            and <span className="!text-white71 italic underline">growth</span>.
+          </li>
+          <li className="aboutPara text-base !leading-[1.8] lg:leading-normal lg:text-xl text-white71">
+            <span className="italic">Flexible Collaboration:</span> Whether
+            working with{" "}
+            <span className="!text-white71 italic underline">teams</span> or{" "}
+            <span className="!text-white71 italic underline">
+              independently
+            </span>
+            , I adapt to{" "}
+            <span className="!text-white71 italic underline">agile</span>{" "}
+            environments to elevate your SaaS product.
+          </li>
           <p className="aboutPara text-base !leading-[1.8] lg:leading-normal lg:text-2xl text-white71">
-          Startups often face limited <span>budgets</span>, tight{" "}
-            <span>deadlines</span>, and the pressure to make a significant <span>impact</span>{" "}quickly.
-            I&apos;m here to <span>help</span>. I build fast, responsive,
-            scalable, optimize, user-centric web applications that not only look
-            great but also drive <span>engagement and growth.</span>
-          </p>
-          <p className="aboutPara text-base !leading-[1.8] lg:leading-normal lg:text-2xl text-white71">
-            <br /> Let&apos;s work together to elevate your startup&apos;s to
-            the <span>next level?</span>
+            <br /> Ready to transform your product? Let&apos;s get started!
           </p>
         </div>
         <div className="cta flex flex-wrap items-start mt-8 gap-5">

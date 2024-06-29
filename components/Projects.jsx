@@ -17,6 +17,7 @@ const Projects = () => {
         { id: 2, text: "Development" },
       ],
       client: "SynFlow",
+      status: "Inprogress"
     },
     {
       id: 2,
@@ -74,7 +75,7 @@ const Projects = () => {
         </div> */}
         <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-8 items-stretch justify-between">
           {projectData.map(
-            ({ id, img, tools, description, project, client, liveLink }) => (
+            ({ id, img, tools, description, project, client, liveLink, status }) => (
               <ProjectCard
                 key={id}
                 client={client}
@@ -83,6 +84,7 @@ const Projects = () => {
                 description={description}
                 project={project}
                 liveLink={liveLink}
+                status={status}
               />
             )
           )}
