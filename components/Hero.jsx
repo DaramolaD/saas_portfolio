@@ -47,15 +47,15 @@ const Hero = () => {
             Happen
           </p> */}
           <div className="flex flex-wrap sm:flex-nowrap items-center justify-center cta gap-8">
-            <Button variant="default" size="lg" className="px-6 md:px-8">
-              <span className="text-sm lg:text-lg">
+            <Button variant="default" size="lg" className="py-3 md:py-2 px-6 md:px-8">
+              <span className="text-base sm:text-lg lg:text-xl">
                 Let&apos;s Discuss Your Project.
               </span>
               <CalendarIcon className="ml5" />
             </Button>
             <Button variant="outline" size="lg" className="px-6 md:px-8">
               <Link href="/#projects" className=" leading-none">
-                <span className="text-sm lg:text-lg">Projects</span>
+              <span className="text-base sm:text-lg lg:text-xl">Projects</span>
               </Link>
             </Button>
           </div>
