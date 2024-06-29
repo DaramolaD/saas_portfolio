@@ -79,7 +79,7 @@ const ProjectCard = ({
                   className="flex gap-1 w-fit mt-5 py-1 px-9 md:px-8 md:py-2 text-base md:text-xl"
                   onClick={() =>
                     router.push(
-                      "https://www.figma.com/proto/dOYCfreXWboroh6d8C8mpi/SynFlow?node-id=1-17689"
+                      "https://www.figma.com/proto/oONsRkqJoGH4c5waOc1q3b/PaySync?node-id=929-54369&t=SIJKIb9Q2NfukOHj-0&scaling=scale-down-width&content-scaling=fixed&page-id=3%3A2789"
                     )
                   }
                 >
