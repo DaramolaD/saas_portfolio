@@ -29,8 +29,9 @@ const About = () => {
           <p className="aboutPara text-base !leading-[1.8] lg:leading-normal lg:text-2xl text-white71">
             Hi, I&apos;m Daniel, a{" "}
             <span className="!text-white71 italic underline pr-[3px]">
-              frontend developer{" "} 
-            </span>{" "}{" "}passionate about helping startups thrive online. With a strong
+              frontend developer{" "}
+            </span>{" "}
+            passionate about helping startups thrive online. With a strong
             background in{" "}
             <span className="!text-white71 italic underline">Next.js</span> and{" "}
             <span className="!text-white71 italic underline">UI/UX design</span>
@@ -80,8 +81,10 @@ const About = () => {
           <li className="aboutPara text-base !leading-[1.8] lg:leading-normal lg:text-2xl text-white71">
             <span className="italic">Impactful Solutions:</span> My designs not
             only look{" "}
-            <span className="!text-white71 italic underline pr-[3px]">great</span> but
-            also drive{" "}
+            <span className="!text-white71 italic underline pr-[3px]">
+              great
+            </span>{" "}
+            but also drive{" "}
             <span className="!text-white71 italic underline">engagement</span>{" "}
             and <span className="!text-white71 italic underline">growth</span>.
           </li>
@@ -101,8 +104,14 @@ const About = () => {
           </p>
         </div>
         <div className="cta flex flex-wrap items-start mt-8 gap-5">
-          <Button variant="default" size="lg" className="mr-5 ">
-            <span className="text-lg">Schedule A Call</span>
+          <Button
+            variant="default"
+            size="lg"
+            className="py-3 md:py-2 px-6 md:px-8"
+          >
+            <span className="text-base sm:text-lg lg:text-xl">
+              Let&apos;s Discuss Your Project.
+            </span>
             <CalendarIcon className="ml5" />
           </Button>
         </div>
