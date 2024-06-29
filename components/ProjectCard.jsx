@@ -13,6 +13,7 @@ const ProjectCard = ({
   description,
   project,
   liveLink,
+  status,
 }) => {
   const router = useRouter();
   return (
@@ -60,20 +61,45 @@ const ProjectCard = ({
                 {tools}
               </p>
             </div>
+            {status && (
+              <div className="flex sm:flex-row gap-4 md:gap-10 justify-between items-start">
+                <p className="min-w-14 md:min-w-20 text-sm sm:text-lg lg:text-xl text-wrap text-white text-start">
+                  Status:
+                </p>
+                <p className="text-sm sm:text-lg lg:text-xl text-wrap text-white71 italic w-full">
+                  {status}
+                </p>
+              </div>
+            )}
             {client === "SynFlow" ? (
-              <Button
-                variant="default"
-                size="lg"
-                className="flex gap-1 w-fit mt-5 py-1 px-9 md:px-8 md:py-2 text-base md:text-xl"
-                onClick={() =>
-                  router.push(
-                    "https://www.figma.com/proto/dOYCfreXWboroh6d8C8mpi/SynFlow?node-id=1-17689"
-                  )
-                }
-              >
-                Figma File
-                <ArrowTopRightIcon className="w-6 md:w-8 h-6 md:h-8" />
-              </Button>
+              <div className="flex flex-col gap-2 justify-between md:flex-row">
+                <Button
+                  variant="default"
+                  size="lg"
+                  className="flex gap-1 w-fit mt-5 py-1 px-9 md:px-8 md:py-2 text-base md:text-xl"
+                  onClick={() =>
+                    router.push(
+                      "https://www.figma.com/proto/oONsRkqJoGH4c5waOc1q3b/PaySync?node-id=929-54369&t=SIJKIb9Q2NfukOHj-0&scaling=scale-down-width&content-scaling=fixed&page-id=3%3A2789"
+                    )
+                  }
+                >
+                  View Design (Figma)
+                  <ArrowTopRightIcon className="w-6 md:w-8 h-6 md:h-8" />
+                </Button>
+                <Button
+                  variant="default"
+                  size="lg"
+                  className="flex gap-1 w-fit mt-5 py-1 px-9 md:px-8 md:py-2 text-base md:text-xl"
+                  onClick={() =>
+                    router.push(
+                      "https://synflow-dev.vercel.app/"
+                    )
+                  }
+                >
+                  Live
+                  <ArrowTopRightIcon className="w-6 md:w-8 h-6 md:h-8" />
+                </Button>
+              </div>
             ) : (
               <Button
                 variant="default"
