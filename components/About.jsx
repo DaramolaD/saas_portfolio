@@ -67,7 +67,7 @@ const About = () => {
               </div> */}
             </div>
           </div>
-          <li className="aboutPara text-base !leading-[1.8] lg:leading-normal lg:text-xl text-white71">
+          <li className="aboutPara text-base !leading-[1.8] lg:leading-normal lg:text-2xl text-white71">
             <span className="italic">Understanding Startup Challenges:</span> I
             know the challenges you face, from tight{" "}
             <span className="!text-white71 italic underline">budgets</span> to
@@ -77,7 +77,7 @@ const About = () => {
             <span className="!text-white71 italic underline">impact</span>{" "}
             quickly.
           </li>
-          <li className="aboutPara text-base !leading-[1.8] lg:leading-normal lg:text-xl text-white71">
+          <li className="aboutPara text-base !leading-[1.8] lg:leading-normal lg:text-2xl text-white71">
             <span className="italic">Impactful Solutions:</span> My designs not
             only look{" "}
             <span className="!text-white71 italic underline pr-[3px]">great</span> but
@@ -85,7 +85,7 @@ const About = () => {
             <span className="!text-white71 italic underline">engagement</span>{" "}
             and <span className="!text-white71 italic underline">growth</span>.
           </li>
-          <li className="aboutPara text-base !leading-[1.8] lg:leading-normal lg:text-xl text-white71">
+          <li className="aboutPara text-base !leading-[1.8] lg:leading-normal lg:text-2xl text-white71">
             <span className="italic">Flexible Collaboration:</span> Whether
             working with{" "}
             <span className="!text-white71 italic underline">teams</span> or{" "}

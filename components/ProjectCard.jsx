@@ -92,7 +92,7 @@ const ProjectCard = ({
                   className="flex gap-1 w-fit mt-5 py-1 px-9 md:px-8 md:py-2 text-base md:text-xl"
                   onClick={() =>
                     router.push(
-                      "https://www.figma.com/proto/dOYCfreXWboroh6d8C8mpi/SynFlow?node-id=1-17689"
+                      "https://synflow-dev.vercel.app/"
                     )
                   }
                 >
